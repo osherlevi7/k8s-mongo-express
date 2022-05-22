@@ -17,6 +17,15 @@
 ```
 
 
+# Create the configMap service. 
+
+
+```hell
+    $ kubectl apply -f configMap.yaml
+```
+
+
+
 # Create the deployment for the mongoDB
 
 ```shell
@@ -24,5 +33,15 @@
 ```
 
 
+# Create the deployment for the mongo-express
+
+```shell
+    $ kibectl apply -f mongo-express.yaml
+```
+
+# start the EXTERNAL service from mongo-express
+```shell 
+    $ minikube service <serviceName>
+```
 
 
